@@ -13,7 +13,7 @@ This is a frontend-backend seperation project. It uses the "Vue" as frontend and
   - npm run serve
   
 - To run the backend project
-  - go run ./conf/config.yaml
+  - go run server ./conf/config.yaml
   
 
 ### Data
