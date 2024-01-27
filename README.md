@@ -45,5 +45,5 @@ This project was deployed on Cloud server through Nginx. The config file for Ngi
 - The compiled project is in the data_vis file. You can use it to deploy or test.
 
 ## Results
-The project should looks like this (1920 * 911):
+The project should look like this (1920 * 911):
 ![Results](./example.png)
