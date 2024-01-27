@@ -23,7 +23,7 @@ A project to practice Data Visualization.
 ## Data
 The purpose of this project is to visualize some investment data. However, the data used is "fake" because I could not find stable and free API to attain real data. 
 
-In these five charts, three of them are dynamic (Main indexs, History, Best Portfolio). They request the latest data from the backend every 2 seconds.
+In these five charts, four of them are dynamic (Main indexs, Investment yield, Best Portfolio, Your Portofolio). They request the latest data from the backend every 2 seconds.
 
 The descriptions for each graph are the following:
 

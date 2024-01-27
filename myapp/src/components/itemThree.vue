@@ -39,7 +39,7 @@ export default {
         this.resp = response.data
         this.stock = this.resp.data.stock
         this.option = this.resp.data.option
-        this.total = this.resp.data.total
+        this.cash = this.resp.data.cash
         this.updateChart()
       })
 

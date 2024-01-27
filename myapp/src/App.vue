@@ -8,7 +8,7 @@ import * as echarts from "echarts"
 import axios from "axios"
 
 // set base url
-axios.defaults.baseURL = "http://localhost:8888"
+axios.defaults.baseURL = "http://124.220.7.23:8888"
 
 export default{
   setup(){

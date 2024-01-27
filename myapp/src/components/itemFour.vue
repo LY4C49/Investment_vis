@@ -3,7 +3,6 @@
   <div>
     <h2>Your Portfolio</h2>
     <div class="chart" id="fourChart">
-      图表的容器
     </div>
   </div>
 </template>
@@ -27,16 +26,20 @@ export default {
   mounted() {
     this.chart = echarts.init(document.getElementById("fourChart"))
     this.updateChart()
+
+    this.timer = setInterval(() => {
+      setTimeout(this.getdata, 0)
+    }, 2000)
   },
 
   methods: {
     getdata() {
-      let url = '/data/current'
+      let url = '/data/rank?stock=' + this.stock + '&' + 'option=' + this.option + '&' + 'cash=' + this.cash
       axios.get(url).then(response => {
         this.resp = response.data
         this.stock = this.resp.data.stock
         this.option = this.resp.data.option
-        this.total = this.resp.data.total
+        this.cash = this.resp.data.cash
         this.updateChart()
       })
 
@@ -98,6 +101,11 @@ export default {
     }
 
   },
+
+  beforeUnmount() {
+    clearInterval(this.timer)
+    this.timer = null
+  }
 
 }
 </script>
